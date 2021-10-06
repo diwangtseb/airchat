@@ -1,0 +1,12 @@
+syntax = "proto3";
+package pb;
+option go_package = "./pb";
+
+
+service Common {
+    rpc Init(Empty) returns (Empty) {}
+}
+
+message Empty{
+    
+}
