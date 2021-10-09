@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-func main() {
+func _() {
 	url := "http://localhost:8080/ping/post"
 	bodys := []byte("{\"id\":1,\"name\":\"TestOK\"}")
 	req, _:= http.NewRequest("POST", url, bytes.NewBuffer(bodys))

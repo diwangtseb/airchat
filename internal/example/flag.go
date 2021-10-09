@@ -11,7 +11,7 @@ var inputInt int
 func init() {
 	flag.IntVar(&inputInt,"age",0,"input your age")
 }
-func main() {
+func _() {
 	flag.Parse()
 	fmt.Println("name=", *inputStr)
 	fmt.Println("sex=",inputInt)
