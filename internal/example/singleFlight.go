@@ -27,7 +27,7 @@ func SingleFligtGetArticle(sg *singleflight.Group,id int64)(string ,error) {
 	return v.(string),nil
 }
 
-func main(){
+func _(){
 	time.AfterFunc(1*time.Second, func() {
 		atomic.AddInt64(&count,-count)
 	})
