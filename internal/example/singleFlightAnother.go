@@ -10,7 +10,7 @@ func QueryKey(key string,ctx context.Context)(string,error){
 	return key,nil
 }
 
-func main(){
+func _(){
 	var sg singleflight.Group
 	ctx := context.Background()
 	key := "double six six six"
